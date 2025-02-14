@@ -4,13 +4,14 @@
 
 ## Grob-Planung
 
-1. Wo stehen Sie mit Ihren Noten? In welchen Modulen waren Sie besonders stark; in welchen sind die ungenügend? Welche davon sind besonders wichtig?
+1. Mit meinen Noten stehe ich momentan gut, weil ich eine 5 als Schnitt habe. Mein bestes Modul war 431 mit einer 5.5 und ungenügend war ich noch nicht.
 2. Was wäre ein geeignetes Projekt für diese LP4? Können Sie mit diesem Projekt zeigen, wie Sie sich selbständig in eine Problemstellung einarbeiten können und eine überzeugende Lösung programmieren können?
+Als Projekt für diese Lernperiode habe ich an einen Cookie-Klicker gedacht.
 
 ## 14.2: Explorativer Wegwerf-Prototyp
 
-- [ ] ...
-- [ ] ...
+- [ ] Zähl mechanik einbauen
+- [ ] Desing grob überlegen
 
 ✍️ Heute habe ich... (50-100 Wörter)
 
