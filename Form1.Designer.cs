@@ -57,10 +57,10 @@
             // cookies_count
             // 
             cookies_count.AutoSize = true;
-            cookies_count.Font = new Font("ROG Fonts", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            cookies_count.Location = new Point(396, 46);
+            cookies_count.Font = new Font("Rockwell", 16F, FontStyle.Bold);
+            cookies_count.Location = new Point(422, 54);
             cookies_count.Name = "cookies_count";
-            cookies_count.Size = new Size(194, 34);
+            cookies_count.Size = new Size(163, 39);
             cookies_count.TabIndex = 2;
             cookies_count.Text = "Cookies: ";
             cookies_count.Click += cookies_count_Click;
@@ -71,7 +71,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(722, 450);
             Controls.Add(cookies_count);
             Controls.Add(button_shop);
             Controls.Add(button_cookie);
