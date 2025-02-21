@@ -17,17 +17,18 @@ Als Projekt für diese Lernperiode habe ich an einen Cookie-clicker gedacht.
 
 ## 21.2: Explorativer Wegwerf-Prototyp
 
-- [ ] Layout vom Spiel zeichen (Mainscreen, Shop,...)
+- [X] Layout vom Spiel zeichen (Mainscreen, Shop,...)
 - [ ] Autoclicker coden
-- [ ] Verbindung für den Autoclicker vom Shop zum Mainscreen
-- [ ] Upgrades ausenken
+- [X] Verbindung für den Autoclicker vom Shop zum Mainscreen
+- [X] Upgrades ausenken
 
-✍️ Heute habe ich... (50-100 Wörter)
-
-☝️ Vergessen Sie nicht, bis einen ersten Code auf github hochzuladen
+✍️ Heute habe ich damit begonnen, mir das Layout des Spiels zu überlegen. Ich habe damit begonnen den Mainscreen zu zeichnen und anschliessend den Shop. Im selben Auftrag habe ich mir die verschiedenen Upgrades überlegt. Als nächstes habe ich den Autoklicker probiert. Dass er funktioniert, musste ich zuerst eine Verbindung zwischen der Knopfberührung und dem Cookie Zähler machen was herausfordernd war. Anschliessend habe ich einen Autoklicker probiert, bin aber gescheitert. Da ich nicht mehr viel Zeit hatte, habe ich damit begonnen das Shop-Design zu verbessern.
 
 ## 28.2: Kern-Funktionalität
-
+- [ ] Autoklicker Coden
+- [ ] Funktionierendes Preissystem Coden
+- [ ] Cookiecounter im Shop
+- [ ] Level-System Coden
 ## 7.3: Kern-Funktionalität
 
 ## 14.3: Architektur ausbauen
