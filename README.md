@@ -22,15 +22,22 @@ Als Projekt für diese Lernperiode habe ich an einen Cookie-clicker gedacht.
 - [X] Verbindung für den Autoclicker vom Shop zum Mainscreen
 - [X] Upgrades ausenken
 
-✍️ Heute habe ich damit begonnen, mir das Layout des Spiels zu überlegen. Ich habe damit begonnen den Mainscreen zu zeichnen und anschliessend den Shop. Im selben Auftrag habe ich mir die verschiedenen Upgrades überlegt. Als nächstes habe ich den Autoklicker probiert. Dass er funktioniert, musste ich zuerst eine Verbindung zwischen der Knopfberührung und dem Cookie Zähler machen was herausfordernd war. Anschliessend habe ich einen Autoklicker probiert, bin aber gescheitert. Da ich nicht mehr viel Zeit hatte, habe ich damit begonnen das Shop-Design zu verbessern.
+✍️ Heute habe ich damit begonnen mir das Layout des Spiels zu überlegen. Ich habe damit begonnen den Mainscreen zu zeichnen und anschliessend den Shop. Im selben Auftrag habe ich mir die verschiedenen Upgrades überlegt. Als nächstes habe ich den Autoklicker probiert. Dass er funktioniert, musste ich zuerst eine Verbindung zwischen der Knopfberührung und dem Cookie Zähler machen was herausfordernd war. Anschliessend habe ich einen Autoklicker probiert, bin aber gescheitert. Da ich nicht mehr viel Zeit hatte, habe ich damit begonnen das Shop-Design zu verbessern.
 
 ## 28.2: Kern-Funktionalität
-- [ ] Autoklicker Coden
-- [ ] Funktionierendes Preissystem Coden
-- [ ] Cookiecounter im Shop
+- [X] Autoklicker Coden
+- [X] Funktionierendes Preissystem Coden
+- [X] Cookiecounter im Shop
 - [ ] Level-System Coden
-## 7.3: Kern-Funktionalität
 
+Heute habe ich damit begonnen den Cookiecounter im Shop zu machen. Dass er einigermassen funktionert war nicht so schwer, doch er updatet noch nicht bei jedem Cookie. Als nächstes habe ich damit begonnen den Autoclicker machen. Diesesmal hat es funktioniert und der Cookiecounter aktualissiert auf beiden Forms gleichzeitig. Anschliessen habe ich noch gemacht, dass der Preis nach jedem Kauf verdoppelt wird und die ausgegebenen Cookies abgezogen werden. Zum Ende wollte ich den Counter im Shop noch fertig stellen, dass wenn man den Cookie klickt er auch direkt geupdatet wird. Dies habe ich mit dem Befehl "ShopForm.UpdateShopCookieCount();" probiert doch jetzt kommt eine Fehlermeldung.
+
+## 7.3: Kern-Funktionalität
+Kernfunktion: Upgrades
+- [] Levelsystem einbauen bei Upgrades
+- [] Cursor Upgrade Coden
+- [] Preis für Cursor
+- [] Fehlermeldung beheben
 ## 14.3: Architektur ausbauen
 
 ## 21.3: Architektur ausbauen
