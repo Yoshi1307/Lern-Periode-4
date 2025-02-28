@@ -2,13 +2,14 @@ namespace Cookie_Clicker
 {
     public partial class Form1 : Form
     {
-         public int cookieCount = 0;
-
+        public int cookieCount = 0;
+        private Shop ShopForm;
         
         public Form1()
         {
             InitializeComponent();
         }
+
         public void UpdateCookieCount()
         {
             cookies_count.Text = $"Cookies: {cookieCount}";
@@ -17,6 +18,7 @@ namespace Cookie_Clicker
         {
             cookieCount++;
             cookies_count.Text = $"Cookies: {cookieCount}";
+            ShopForm.UpdateShopCookieCount();
         }
 
         private void button_shop_Click(object sender, EventArgs e)

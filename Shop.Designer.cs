@@ -37,7 +37,7 @@
             Level_2x = new Label();
             cookies_count = new Label();
             label4 = new Label();
-            label5 = new Label();
+            Preis_Autoklicker = new Label();
             label6 = new Label();
             SuspendLayout();
             // 
@@ -123,6 +123,7 @@
             cookies_count.Size = new Size(163, 39);
             cookies_count.TabIndex = 8;
             cookies_count.Text = "Cookies: ";
+            cookies_count.Click += cookies_count_Click;
             // 
             // label4
             // 
@@ -130,19 +131,19 @@
             label4.Font = new Font("Rockwell", 13F);
             label4.Location = new Point(438, 294);
             label4.Name = "label4";
-            label4.Size = new Size(71, 30);
+            label4.Size = new Size(78, 30);
             label4.TabIndex = 11;
-            label4.Text = "50🍪";
+            label4.Text = "50 🍪";
             // 
-            // label5
+            // Preis_Autoklicker
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Rockwell", 13F);
-            label5.Location = new Point(438, 243);
-            label5.Name = "label5";
-            label5.Size = new Size(71, 30);
-            label5.TabIndex = 10;
-            label5.Text = "50🍪";
+            Preis_Autoklicker.AutoSize = true;
+            Preis_Autoklicker.Font = new Font("Rockwell", 13F);
+            Preis_Autoklicker.Location = new Point(438, 243);
+            Preis_Autoklicker.Name = "Preis_Autoklicker";
+            Preis_Autoklicker.Size = new Size(78, 30);
+            Preis_Autoklicker.TabIndex = 10;
+            Preis_Autoklicker.Text = "50 🍪";
             // 
             // label6
             // 
@@ -150,9 +151,9 @@
             label6.Font = new Font("Rockwell", 13F);
             label6.Location = new Point(438, 192);
             label6.Name = "label6";
-            label6.Size = new Size(71, 30);
+            label6.Size = new Size(78, 30);
             label6.TabIndex = 9;
-            label6.Text = "50🍪";
+            label6.Text = "50 🍪";
             // 
             // Shop
             // 
@@ -161,7 +162,7 @@
             BackgroundImage = Properties.Resources.simple_background_textured_wood_texture_wallpaper_preview;
             ClientSize = new Size(544, 450);
             Controls.Add(label4);
-            Controls.Add(label5);
+            Controls.Add(Preis_Autoklicker);
             Controls.Add(label6);
             Controls.Add(cookies_count);
             Controls.Add(Level_2x);
@@ -187,7 +188,7 @@
         private Label Level_2x;
         private Label cookies_count;
         private Label label4;
-        private Label label5;
+        private Label Preis_Autoklicker;
         private Label label6;
     }
 }
