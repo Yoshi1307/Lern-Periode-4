@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             button_cookie = new Button();
             button_shop = new Button();
             cookies_count = new Label();
@@ -36,6 +35,7 @@
             // 
             // button_cookie
             // 
+            button_cookie.Cursor = Cursors.Hand;
             button_cookie.Location = new Point(396, 136);
             button_cookie.Name = "button_cookie";
             button_cookie.Size = new Size(211, 202);
@@ -46,6 +46,7 @@
             // 
             // button_shop
             // 
+            button_shop.Cursor = Cursors.Hand;
             button_shop.Location = new Point(113, 106);
             button_shop.Name = "button_shop";
             button_shop.Size = new Size(112, 262);
@@ -69,7 +70,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImage = Properties.Resources.simple_background_textured_wood_texture_wallpaper_preview;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(722, 450);
             Controls.Add(cookies_count);
