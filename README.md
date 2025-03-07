@@ -34,11 +34,17 @@ Heute habe ich damit begonnen den Cookiecounter im Shop zu machen. Dass er einig
 
 ## 7.3: Kern-Funktionalität
 Kernfunktion: Upgrades
-- [] Levelsystem einbauen bei Upgrades
-- [] Cursor Upgrade Coden
-- [] Preis für Cursor
-- [] Fehlermeldung beheben
+- [x] Levelsystem einbauen bei Upgrades
+- [x] Cursor Upgrade Coden
+- [x] Preis für Cursor
+- [x] Fehlermeldung beheben
+
+Heute habe ich damit begonnen die Fehlermeldung zu beheben. Dies war nicht sehr schwer. Danach habe ich angefangen ein Cursor-Upgrade zu Coden. Wenn man es kauft verdoppelt sich die Anzahl Cookies die man pro klick bekommt. Anschliessend habe ich den Preis gemacht, was nicht so schwer war, weil ich es beim Autoclicker schon hatte. Als nächstes habe ich ein Levelsystem gemacht, dass sich nach jedem kauf automatisch hochstuft. Dies habe ich für den Autoclicker und das Cursor-Upgrade gemacht. Ausserdem sind die beiden Cookiecounter jetzt Synchron, das einzige Problem ist, dass der Shop nach dem ersten klick auf den cookie aufgeht und wenn man ihn zumacht er sich nicht mehr updatet.
 ## 14.3: Architektur ausbauen
+- [ ] Preis für 2x Upgrade
+- [ ] Levelsystem für 2x Upgrade 
+- [ ] Funktionierendes 2x Upgarde Coden
+- [ ] Shop kann sich im Hintegrund aktualisieren
 
 ## 21.3: Architektur ausbauen
 
