@@ -18,8 +18,6 @@ namespace Cookie_Clicker
         }
         private void button_cookie_Click(object sender, EventArgs e)
         {
-            
-
             if (ShopForm == null || ShopForm.IsDisposed)
             {
                 ShopForm = new Shop(this);
@@ -30,13 +28,13 @@ namespace Cookie_Clicker
 
             int cookiesToAdd = ShopForm.CursorEarnings;
 
-         
+
             cookieCount += ShopForm.CursorEarnings;
 
             cookies_count.Text = $"Cookies: {cookieCount}";
             ShopForm.UpdateShopCookieCount();
         }
-       
+
         private void button_shop_Click(object sender, EventArgs e)
         {
             Shop shopForm = new Shop(this);

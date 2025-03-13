@@ -88,10 +88,10 @@ namespace Cookie_Clicker
                 Level_Autoclicker.Text = $"Level {Level_autoclicker}";
             }
 
+
         }
         private void UpdateAutoclicker(object sender, EventArgs e)
         {
-            
             mainForm.cookieCount += AutoclickerEarnings;
             mainForm.UpdateCookieCount();
 
@@ -120,7 +120,7 @@ namespace Cookie_Clicker
                 UpdateShopCookieCount();
                 mainForm.UpdateCookieCount();
 
-                
+
                 CursorEarnings *= 2;
                 Level_cursor++;
                 Level_Cursor.Text = $"Level {Level_cursor}";
@@ -149,8 +149,37 @@ namespace Cookie_Clicker
 
         private void Upgrade_2x_Click(object sender, EventArgs e)
         {
-           
+            string[] parts = Preis_2x.Text.Split(' ');
+            int currentPrice = 0;
+            int.TryParse(parts[0], out currentPrice);
+
+            if (mainForm.cookieCount >= currentPrice)
+            {
+                mainForm.cookieCount -= currentPrice;
+                if (currentPrice > 3199)
+                {
+                    currentPrice *= 3;
+                }
+                if (currentPrice < 3199)
+                {
+                    currentPrice *= 2;
+                }
+                Preis_2x.Text = currentPrice.ToString() + " 🍪";
+
+
+                UpdateShopCookieCount();
+                mainForm.UpdateCookieCount();
+
+                Level_Double++;
+                Level_2x.Text = $"Level {Level_Double}";
+
+            }
+
         }
 
+        private void Level_2x_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
