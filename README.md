@@ -41,11 +41,13 @@ Kernfunktion: Upgrades
 
 Heute habe ich damit begonnen die Fehlermeldung zu beheben. Dies war nicht sehr schwer. Danach habe ich angefangen ein Cursor-Upgrade zu Coden. Wenn man es kauft verdoppelt sich die Anzahl Cookies die man pro klick bekommt. Anschliessend habe ich den Preis gemacht, was nicht so schwer war, weil ich es beim Autoclicker schon hatte. Als nächstes habe ich ein Levelsystem gemacht, dass sich nach jedem kauf automatisch hochstuft. Dies habe ich für den Autoclicker und das Cursor-Upgrade gemacht. Ausserdem sind die beiden Cookiecounter jetzt Synchron, das einzige Problem ist, dass der Shop nach dem ersten klick auf den cookie aufgeht und wenn man ihn zumacht er sich nicht mehr updatet.
 ## 14.3: Architektur ausbauen
-- [ ] Preis für 2x Upgrade
-- [ ] Levelsystem für 2x Upgrade 
+- [X] Preis für 2x Upgrade
+- [x] Levelsystem für 2x Upgrade 
 - [ ] Funktionierendes 2x Upgarde Coden
 - [ ] Shop kann sich im Hintegrund aktualisieren
 
+Heute habe ich damit begonnen das Preissystem und die Levelmechanik auch für das 2x Upgrade einzufügen. Dies war wieder nicht so schwer. Danach habe ich probiert ein Funktionierendes 2x Upgrade zu machen, welches nicht geklappt hat. Nach einiger Zeit habe ich mich ans letzte Arbeitspaket gemacht. Dies hat nur Teilweise funktioniert, da wenn er sich bei mir im Hintergrund aktualisiert, sich nicht mehr live auf dem Shop Form updatet. Heute war leider nicht so ein guter Tag, weshalb ich nur die 2 ersten geschafft habe. 
+ 
 ## 21.3: Architektur ausbauen
 
 ## 28.3: Auspolieren
