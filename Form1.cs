@@ -3,6 +3,8 @@ namespace Cookie_Clicker
     public partial class Form1 : Form
     {
         public int cookieCount = 0;
+        public int Countdown = 60;
+        private System.Windows.Forms.Timer CountdownTimer;
         private Shop ShopForm;
 
 
@@ -44,8 +46,40 @@ namespace Cookie_Clicker
 
         private void cookies_count_Click(object sender, EventArgs e)
         {
-            
+
         }
 
+        private void StartDoubleTimer()
+        {
+            if (ShopForm.Level_Double > 1)  
+            {
+                if (CountdownTimer == null)
+                {
+                    CountdownTimer = new System.Windows.Forms.Timer() {Interval = 1000};
+                    CountdownTimer.Tick += UpdateCountdown;
+                }
+
+                Countdown = 60; 
+                CountdownTimer.Start();
+            }
+        }
+        private void UpdateCountdown(object sender, EventArgs e)
+        {
+            if (Countdown > 0)
+            {
+                Countdown--;
+                Double_Countdown.Text = $"2x Boost: {Countdown}Sec";
+            }
+            else
+            {
+                CountdownTimer.Stop();
+            }
+        }
+
+        private void Double_Countdown_Click(object sender, EventArgs e)
+        {
+
+        }
     }
-}
+
+} 

@@ -31,6 +31,7 @@
             button_cookie = new Button();
             button_shop = new Button();
             cookies_count = new Label();
+            Double_Countdown = new Label();
             SuspendLayout();
             // 
             // button_cookie
@@ -66,6 +67,16 @@
             cookies_count.Text = "Cookies: ";
             cookies_count.Click += cookies_count_Click;
             // 
+            // Double_Countdown
+            // 
+            Double_Countdown.AutoSize = true;
+            Double_Countdown.Font = new Font("Segoe UI", 17F);
+            Double_Countdown.Location = new Point(349, 373);
+            Double_Countdown.Name = "Double_Countdown";
+            Double_Countdown.Size = new Size(0, 46);
+            Double_Countdown.TabIndex = 3;
+            Double_Countdown.Click += Double_Countdown_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -73,6 +84,7 @@
             BackgroundImage = Properties.Resources.simple_background_textured_wood_texture_wallpaper_preview;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(722, 450);
+            Controls.Add(Double_Countdown);
             Controls.Add(cookies_count);
             Controls.Add(button_shop);
             Controls.Add(button_cookie);
@@ -87,5 +99,6 @@
         private Button button_cookie;
         private Button button_shop;
         private Label cookies_count;
+        private Label Double_Countdown;
     }
 }
