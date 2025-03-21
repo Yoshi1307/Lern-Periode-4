@@ -49,7 +49,16 @@ Heute habe ich damit begonnen die Fehlermeldung zu beheben. Dies war nicht sehr 
 Heute habe ich damit begonnen das Preissystem und die Levelmechanik auch für das 2x Upgrade einzufügen. Dies war wieder nicht so schwer. Danach habe ich probiert ein Funktionierendes 2x Upgrade zu machen, welches nicht geklappt hat. Nach einiger Zeit habe ich mich ans letzte Arbeitspaket gemacht. Dies hat nur Teilweise funktioniert, da wenn er sich bei mir im Hintergrund aktualisiert, sich nicht mehr live auf dem Shop Form updatet. Heute war leider nicht so ein guter Tag, weshalb ich nur die 2 ersten geschafft habe. 
  
 ## 21.3: Architektur ausbauen
+- [X] Funktionierendes 2x Upgarde Coden
+- [ ] Shop kann sich im Hintegrund aktualisieren
+- [ ] Countdown für 60sec Timer
+
+Heute habe ich das 2. mal damit begonnen, das 2x Upgrade zu Coden. Heute ist es viel besser gelungen und es funktioniert. Als Nächstes habe ich die Preise und Preisupdates der einzelnen Upgrades angepasst. Sie sind noch nicht perfekt, aber besser als vorhin. Zum Schluss habe ich mich noch an den Countdown gemacht, der Anzeigen soll, wie lange das 2x Upgrade noch hält. Ich habe einen Code geschrieben, aber der funktioniert noch nicht und ich weiss nicht wieso.
 
 ## 28.3: Auspolieren
+- [ ] Countdown zum laufen bringen
+- [ ] Preise und Preisupdates verbessern
+- [ ] Desing vom ganzen überarbeiten
+- [ ] Shop im Hintergrund aktualisieren lassen
 
 ## 4.4: Auspolieren & Abschluss
