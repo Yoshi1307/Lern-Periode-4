@@ -56,9 +56,13 @@ Heute habe ich damit begonnen das Preissystem und die Levelmechanik auch für da
 Heute habe ich das 2. mal damit begonnen, das 2x Upgrade zu Coden. Heute ist es viel besser gelungen und es funktioniert. Als Nächstes habe ich die Preise und Preisupdates der einzelnen Upgrades angepasst. Sie sind noch nicht perfekt, aber besser als vorhin. Zum Schluss habe ich mich noch an den Countdown gemacht, der Anzeigen soll, wie lange das 2x Upgrade noch hält. Ich habe einen Code geschrieben, aber der funktioniert noch nicht und ich weiss nicht wieso.
 
 ## 28.3: Auspolieren
-- [ ] Countdown zum laufen bringen
-- [ ] Preise und Preisupdates verbessern
-- [ ] Desing vom ganzen überarbeiten
+- [X] Countdown zum laufen bringen
+- [X] Preise und Preisupdates verbessern
+- [X] Desing vom ganzen überarbeiten
 - [ ] Shop im Hintergrund aktualisieren lassen
 
+Heute habe ich zuerst die Preise vom ganzen angepasst. Ich habe sie so angepasst dass es nicht zu schnell geht und man ein bisschen spielen muss. Die upgrades wurden auch dementsprechend angepasst. Als nächstes habe ich das Design angepasst und ein anderes Hintergrundbild genommen. Ausserdem habe ich einen CookiesPerClick zähler und einen CookiesPerAutoklickerinterval Zähler. Zum Schluss habe ich den Countdown noch zum laufen gebracht.
+
 ## 4.4: Auspolieren & Abschluss
+- [ ] Shopwerte sollen im Hintergrund gespeichert werden
+- [ ] 2x Upgrade Optimieren wenn etwas während dem Timer gekauft wird
