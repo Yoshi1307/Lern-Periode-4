@@ -6,6 +6,10 @@ namespace Cookie_Clicker
         public int Countdown = 60;
         private System.Windows.Forms.Timer CountdownTimer;
         private Shop ShopForm;
+        public int AutoclickerEarnings = 1;
+        public int CursorEarnings = 1;
+        public int Level_autoclicker = 1;
+        public int Level_cursor = 1;
 
 
         public Form1()
@@ -28,13 +32,14 @@ namespace Cookie_Clicker
             ShopForm.Show();
             ShopForm.UpdateShopCookieCount();
 
-            int cookiesToAdd = ShopForm.CursorEarnings;
+            int cookiesToAdd = CursorEarnings;
 
 
-            cookieCount += ShopForm.CursorEarnings;
+            cookieCount += CursorEarnings;
 
             cookies_count.Text = $"Cookies: {cookieCount}";
             ShopForm.UpdateShopCookieCount();
+
         }
 
         private void button_shop_Click(object sender, EventArgs e)
@@ -49,37 +54,26 @@ namespace Cookie_Clicker
 
         }
 
-        private void StartDoubleTimer()
-        {
-            if (ShopForm.Level_Double > 1)  
-            {
-                if (CountdownTimer == null)
-                {
-                    CountdownTimer = new System.Windows.Forms.Timer() {Interval = 1000};
-                    CountdownTimer.Tick += UpdateCountdown;
-                }
-
-                Countdown = 60; 
-                CountdownTimer.Start();
-            }
-        }
-        private void UpdateCountdown(object sender, EventArgs e)
-        {
-            if (Countdown > 0)
-            {
-                Countdown--;
-                Double_Countdown.Text = $"2x Boost: {Countdown}Sec";
-            }
-            else
-            {
-                CountdownTimer.Stop();
-            }
-        }
+        
 
         private void Double_Countdown_Click(object sender, EventArgs e)
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            cookieCount += 10000;
+            ShopForm.UpdateShopCookieCount();
+            UpdateCookieCount();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 
 } 

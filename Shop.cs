@@ -17,12 +17,12 @@ namespace Cookie_Clicker
         private Form1 mainForm;
         private System.Windows.Forms.Timer timer;
         public System.Windows.Forms.Timer DoubleTimer;
+        private System.Windows.Forms.Timer CountdownTimer;
 
-        public int AutoclickerEarnings = 1;
-        public int CursorEarnings = 1;
-        int Level_autoclicker = 1;
-        int Level_cursor = 1;
-        public int Level_Double = 1;
+        
+
+        public int AnzahlKäufe = 0;
+        public int Countdown = 60;
 
 
 
@@ -34,9 +34,11 @@ namespace Cookie_Clicker
         {
             InitializeComponent();
             mainForm = form1;
+            //Autoclicker Interval Timer
             timer = new System.Windows.Forms.Timer { Interval = 2000 };
             timer.Tick += UpdateAutoclicker;
 
+            //2x Upgrade Timer
             DoubleTimer = new System.Windows.Forms.Timer { Interval = 60000 };
             DoubleTimer.Tick += DoubleEarningsStop;
 
@@ -49,6 +51,12 @@ namespace Cookie_Clicker
             cookie_count_shop.Text = $"Cookies: {mainForm.cookieCount}";
         }
 
+        public void UpdateCookiesPer()
+        {
+            CPA.Text = $"CPA: {mainForm.AutoclickerEarnings}";
+            CPC.Text = $"CPC: {mainForm.CursorEarnings}";
+        }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -58,7 +66,7 @@ namespace Cookie_Clicker
         {
             cookie_count_shop.Text = $"Cookies: {mainForm.cookieCount}";
         }
-        private void Autoclicker_Click(object sender, EventArgs e)
+        public void Autoclicker_Click(object sender, EventArgs e)
         {
             string[] parts = Preis_Autoklicker.Text.Split(' ');
             int currentPrice = 0;
@@ -68,14 +76,22 @@ namespace Cookie_Clicker
             if (mainForm.cookieCount >= currentPrice)
             {
                 mainForm.cookieCount -= currentPrice;
-                if (currentPrice > 3199)
+                if (currentPrice >= 500 && currentPrice < 2000)
                 {
-                    currentPrice *= 3;
+                    currentPrice += 150;
+                    mainForm.AutoclickerEarnings += 1;
                 }
-                if (currentPrice < 3199)
+                else if (currentPrice >= 2000 && currentPrice < 5000)
                 {
-                    currentPrice *= 2;
+                    currentPrice += 200;
+                    mainForm.AutoclickerEarnings += 2;
                 }
+                else if (currentPrice >= 5000)
+                {
+                    currentPrice += 300;
+                    mainForm.AutoclickerEarnings += 3;
+                }
+
                 Preis_Autoklicker.Text = currentPrice.ToString() + " 🍪";
 
                 UpdateShopCookieCount();
@@ -87,22 +103,23 @@ namespace Cookie_Clicker
                     timer.Start();
                 }
 
-                AutoclickerEarnings *= 2;
-                Level_autoclicker++;
-                Level_Autoclicker.Text = $"Level {Level_autoclicker}";
+
+                mainForm.Level_autoclicker++;
+                Level_Autoclicker.Text = $"Level {mainForm.Level_autoclicker}";
+                UpdateCookiesPer();
             }
 
 
         }
-        private void UpdateAutoclicker(object sender, EventArgs e)
+        public void UpdateAutoclicker(object sender, EventArgs e)
         {
-            mainForm.cookieCount += AutoclickerEarnings;
+            mainForm.cookieCount += mainForm.AutoclickerEarnings;
             mainForm.UpdateCookieCount();
 
             UpdateShopCookieCount();
         }
 
-        private void Cursor_Upgrade_Click(object sender, EventArgs e)
+        public void Cursor_Upgrade_Click(object sender, EventArgs e)
         {
             string[] parts = Preis_Cursor.Text.Split(' ');
             int currentPrice = 0;
@@ -111,23 +128,41 @@ namespace Cookie_Clicker
             if (mainForm.cookieCount >= currentPrice)
             {
                 mainForm.cookieCount -= currentPrice;
-                if (currentPrice > 3199)
+                if (currentPrice == 50)
                 {
-                    currentPrice *= 3;
+                    currentPrice += 50;
+                    mainForm.CursorEarnings += 1;
                 }
-                if (currentPrice < 3199)
+                else if (currentPrice > 51 && currentPrice < 500)
                 {
-                    currentPrice *= 2;
+                    currentPrice += 100;
+                    mainForm.CursorEarnings += 1;
                 }
+                else if (currentPrice >= 500 && currentPrice < 2000)
+                {
+                    currentPrice += 150;
+                    mainForm.CursorEarnings += 1;
+                }
+                else if (currentPrice >= 2000 && currentPrice < 5000)
+                {
+                    currentPrice += 200;
+                    mainForm.CursorEarnings += 2;
+                }
+                else if (currentPrice >= 5000)
+                {
+                    currentPrice += 300;
+                    mainForm.CursorEarnings += 3;
+                }
+
                 Preis_Cursor.Text = currentPrice.ToString() + " 🍪";
 
                 UpdateShopCookieCount();
                 mainForm.UpdateCookieCount();
 
 
-                CursorEarnings *= 2;
-                Level_cursor++;
-                Level_Cursor.Text = $"Level {Level_cursor}";
+                mainForm.Level_cursor++;
+                Level_Cursor.Text = $"Level {mainForm.Level_cursor}";
+                UpdateCookiesPer();
             }
         }
 
@@ -160,55 +195,86 @@ namespace Cookie_Clicker
             if (mainForm.cookieCount >= currentPrice)
             {
                 mainForm.cookieCount -= currentPrice;
-                if (currentPrice > 4000)
+                if (currentPrice < 4000)
                 {
-                    currentPrice *= 2;
+                    currentPrice += 500;
                 }
-                if (currentPrice < 4001)
+                else if (currentPrice >= 4000)
                 {
                     currentPrice += 1000;
                 }
+
                 Preis_2x.Text = currentPrice.ToString() + " 🍪";
 
                 UpdateShopCookieCount();
                 mainForm.UpdateCookieCount();
 
-                Level_Double++;
-                Level_2x.Text = $"Level {Level_Double}";
 
+                AnzahlKäufe += 1;
+
+                StartDoubleTimer1();
                 StartDoubleTimer();
+                UpdateCookiesPer();
             }
 
 
         }
-        private void StartDoubleTimer()
+        public void StartDoubleTimer()
         {
-            // Verdoppeln nur aktivieren, wenn es nicht bereits aktiv ist
+            if (AnzahlKäufe >= 1)
+            {
+                if (CountdownTimer == null)
+                {
+                    CountdownTimer = new System.Windows.Forms.Timer() { Interval = 1000 };
+                    CountdownTimer.Tick += UpdateCountdown;
+                }
+
+                Countdown = 60;
+                CountdownTimer.Start();
+            }
+        }
+        public void UpdateCountdown(object sender, EventArgs e)
+        {
+            if (Countdown > 0)
+            {
+                Countdown--;
+                Countdown_.Text = $"{Countdown} Sec";
+            }
+            else
+            {
+                CountdownTimer.Stop();
+            }
+        }
+        public void StartDoubleTimer1()
+        {
+
             if (!DoubleTimer.Enabled)
             {
-                AutoclickerEarnings *= 2;
-                CursorEarnings *= 2;
+                mainForm.AutoclickerEarnings *= 2;
+                mainForm.CursorEarnings *= 2;
 
                 DoubleTimer.Start();
             }
+
         }
-        private void DoubleEarningsStop(object sender, EventArgs e)
+        public void DoubleEarningsStop(object sender, EventArgs e)
         {
-            AutoclickerEarnings /= 2;
-            CursorEarnings /= 2;
+            mainForm.AutoclickerEarnings /= 2;
+            mainForm.CursorEarnings /= 2;
 
             DoubleTimer.Stop();
 
         }
 
-        private void Level_2x_Click(object sender, EventArgs e)
+        public void Preis_2x_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void Preis_2x_Click(object sender, EventArgs e)
+        public void Shop_Load(object sender, EventArgs e)
         {
 
         }
+
     }
 }
