@@ -42,6 +42,7 @@
             CPA = new Label();
             CPC = new Label();
             label1 = new Label();
+            label2 = new Label();
             SuspendLayout();
             // 
             // Cursor_Upgrade
@@ -211,6 +212,16 @@
             label1.TabIndex = 18;
             label1.Text = "      -";
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 7F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(457, 1);
+            label2.Name = "label2";
+            label2.Size = new Size(276, 19);
+            label2.TabIndex = 19;
+            label2.Text = "Der Shop soll nicht geschlossen werden!";
+            // 
             // Shop
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -218,6 +229,7 @@
             BackgroundImage = Properties.Resources.simple_background_textured_wood_texture_wallpaper_preview;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(729, 456);
+            Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(CPC);
             Controls.Add(CPA);
@@ -255,5 +267,6 @@
         private Label CPA;
         private Label CPC;
         private Label label1;
+        private Label label2;
     }
 }

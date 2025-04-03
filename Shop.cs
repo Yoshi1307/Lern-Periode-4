@@ -58,6 +58,13 @@ namespace Cookie_Clicker
         }
 
 
+        public void LevelUpdater()
+        {
+            Level_Autoclicker.Text = $"Level {mainForm.Level_autoclicker}";
+            Level_Cursor.Text = $"Level {mainForm.Level_cursor}";
+
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -176,7 +183,7 @@ namespace Cookie_Clicker
 
         }
 
-        private void Level_Autoclicker_Click(object sender, EventArgs e)
+        public void Level_Autoclicker_Click(object sender, EventArgs e)
         {
 
         }

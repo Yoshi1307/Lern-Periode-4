@@ -39,6 +39,9 @@ namespace Cookie_Clicker
 
             cookies_count.Text = $"Cookies: {cookieCount}";
             ShopForm.UpdateShopCookieCount();
+            ShopForm.UpdateCookiesPer();
+            ShopForm.LevelUpdater();
+           
 
         }
 
