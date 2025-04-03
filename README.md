@@ -1,5 +1,13 @@
 # Lern-Periode 4
 
+## Mein Projekt
+Als Projekt für die 4. Lern-Periode habe ich ein CookieKlicker gewählt. Im Spiel sammelt man Cookies durch Klicken. Es gibt Upgrades, die man kaufen kann, wie den Autoklicker und das Cursor-Upgrade, die die Anzahl der Cookies pro Klick erhöhen. Im Shop kann man diese Upgrades kaufen, wobei sich die Preise mit jedem mal erhöhen. Der Autoklicker fügt automatisch Cookies hinzu, während das "2x Upgrade" die Cookies 60 Sekunden lang verdoppelt. Mit einem höheren Level werden die Upgrades immer effektiver.
+Hier noch ein kleiner Ausschnitt des Overlays: 
+
+https://github.com/user-attachments/assets/7a834a0c-76c2-454b-a6c0-667442690fcc
+
+
+
 14.2 bis 4.4
 
 ## Grob-Planung
@@ -40,6 +48,7 @@ Kernfunktion: Upgrades
 - [x] Fehlermeldung beheben
 
 Heute habe ich damit begonnen die Fehlermeldung zu beheben. Dies war nicht sehr schwer. Danach habe ich angefangen ein Cursor-Upgrade zu Coden. Wenn man es kauft verdoppelt sich die Anzahl Cookies die man pro klick bekommt. Anschliessend habe ich den Preis gemacht, was nicht so schwer war, weil ich es beim Autoclicker schon hatte. Als nächstes habe ich ein Levelsystem gemacht, dass sich nach jedem kauf automatisch hochstuft. Dies habe ich für den Autoclicker und das Cursor-Upgrade gemacht. Ausserdem sind die beiden Cookiecounter jetzt Synchron, das einzige Problem ist, dass der Shop nach dem ersten klick auf den cookie aufgeht und wenn man ihn zumacht er sich nicht mehr updatet.
+
 ## 14.3: Architektur ausbauen
 - [X] Preis für 2x Upgrade
 - [x] Levelsystem für 2x Upgrade 
@@ -59,10 +68,13 @@ Heute habe ich das 2. mal damit begonnen, das 2x Upgrade zu Coden. Heute ist es 
 - [X] Countdown zum laufen bringen
 - [X] Preise und Preisupdates verbessern
 - [X] Desing vom ganzen überarbeiten
-- [ ] Shop im Hintergrund aktualisieren lassen
+- [X] Shop im Hintergrund aktualisieren lassen
 
 Heute habe ich zuerst die Preise vom ganzen angepasst. Ich habe sie so angepasst dass es nicht zu schnell geht und man ein bisschen spielen muss. Die upgrades wurden auch dementsprechend angepasst. Als nächstes habe ich das Design angepasst und ein anderes Hintergrundbild genommen. Ausserdem habe ich einen CookiesPerClick zähler und einen CookiesPerAutoklickerinterval Zähler. Zum Schluss habe ich den Countdown noch zum laufen gebracht.
 
 ## 4.4: Auspolieren & Abschluss
-- [ ] Shopwerte sollen im Hintergrund gespeichert werden
-- [ ] 2x Upgrade Optimieren wenn etwas während dem Timer gekauft wird
+- [x] Shopwerte sollen im Hintergrund gespeichert werden
+- [X] 2x Upgrade Optimieren wenn etwas während dem Timer gekauft wird
+
+## Reflexion
+Zu Beginn des Projektes war es noch einfach, Sachen aus dem Kopf zu machen, und ich brauchte keine Hilfe vom Internet. Erst als ich zum Autoklicker kam, traten die ersten Probleme auf und ich hatte keine Ahnung, wie ich das machen soll. Nach Recherche und YouTube-Videos konnte ich einen Funktionierenden Autoklicker implementieren. Auf ihn war ich schon sehr stolz, da ich am Anfang überhaupt keine Idee hatte, wie ich ihn machen könnte. Für die Sachen wie die Preissysteme brauchte ich auch keine Hilfe und konnte es von selber. Manchmal sass ich zu lange an einem Arbeitspaket, das ich nicht hinbekommen habe, anstatt ein anderes zu machen. Durch das Projekt werde ich auch versuchen, meine Herangehensweise zu verbessern. Ich werde versuchen, mehr im Voraus zu denken und meinen Code von Anfang an übersichtlich zu gestalten. Abschliessend kann ich sagen, dass ich in dieser Lern-Periode viel über Win-Forms gelernt habe und ich jetzt auch besser verstehe, wie man damit umgeht und ich weiss wie wichtig es ist, strukturierten Code zu haben.
