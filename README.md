@@ -2,7 +2,7 @@
 
 ## Mein Projekt
 Als Projekt für die 4. Lern-Periode habe ich ein CookieKlicker gewählt. Im Spiel sammelt man Cookies durch Klicken. Es gibt Upgrades, die man kaufen kann, wie den Autoklicker und das Cursor-Upgrade, die die Anzahl der Cookies pro Klick erhöhen. Im Shop kann man diese Upgrades kaufen, wobei sich die Preise mit jedem mal erhöhen. Der Autoklicker fügt automatisch Cookies hinzu, während das "2x Upgrade" die Cookies 60 Sekunden lang verdoppelt. Mit einem höheren Level werden die Upgrades immer effektiver.
-Hier noch ein kleiner Ausschnitt des Overlays: 
+Hier noch ein kleiner Ausschnitt des Shops mit aktivierung des Timers: 
 ![Unbenanntes Video (1)](https://github.com/user-attachments/assets/7ac65bf3-2977-4c7d-b888-59613828b90b)
 
 
