@@ -23,7 +23,7 @@ Als Projekt für diese Lernperiode habe ich an einen Cookie-clicker gedacht.
 - [x] Zähl mechanik einbauen
 - [x] Desing grob überlegen
 
-✍️ Heute habe ich mir vorgenommen den beginn eines Cookie-clickers zu programmieren. Zuerst hatte ich noch ein paar Probleme mit dem Programm, da ich es schon 3 Wochen nicht mehr gebraucht habe. Also musste ich ein neues erstellen. Beim zweiten anlauf hat es dann geklappt und ich konnte ein Prototyp für den Mainscreen und ein bisschen vom Shop machen.
+Heute habe ich mir vorgenommen den beginn eines Cookie-clickers zu programmieren. Zuerst hatte ich noch ein paar Probleme mit dem Programm, da ich es schon 3 Wochen nicht mehr gebraucht habe. Also musste ich ein neues erstellen. Beim zweiten anlauf hat es dann geklappt und ich konnte ein Prototyp für den Mainscreen und ein bisschen vom Shop machen.
 
 ## 21.2: Explorativer Wegwerf-Prototyp
 
@@ -32,7 +32,7 @@ Als Projekt für diese Lernperiode habe ich an einen Cookie-clicker gedacht.
 - [X] Verbindung für den Autoclicker vom Shop zum Mainscreen
 - [X] Upgrades ausenken
 
-✍️ Heute habe ich damit begonnen mir das Layout des Spiels zu überlegen. Ich habe damit begonnen den Mainscreen zu zeichnen und anschliessend den Shop. Im selben Auftrag habe ich mir die verschiedenen Upgrades überlegt. Als nächstes habe ich den Autoklicker probiert. Dass er funktioniert, musste ich zuerst eine Verbindung zwischen der Knopfberührung und dem Cookie Zähler machen was herausfordernd war. Anschliessend habe ich einen Autoklicker probiert, bin aber gescheitert. Da ich nicht mehr viel Zeit hatte, habe ich damit begonnen das Shop-Design zu verbessern.
+Heute habe ich damit begonnen mir das Layout des Spiels zu überlegen. Ich habe damit begonnen den Mainscreen zu zeichnen und anschliessend den Shop. Im selben Auftrag habe ich mir die verschiedenen Upgrades überlegt. Als nächstes habe ich den Autoklicker probiert. Dass er funktioniert, musste ich zuerst eine Verbindung zwischen der Knopfberührung und dem Cookie Zähler machen was herausfordernd war. Anschliessend habe ich einen Autoklicker probiert, bin aber gescheitert. Da ich nicht mehr viel Zeit hatte, habe ich damit begonnen das Shop-Design zu verbessern.
 
 ## 28.2: Kern-Funktionalität
 - [X] Autoklicker Coden
@@ -40,7 +40,7 @@ Als Projekt für diese Lernperiode habe ich an einen Cookie-clicker gedacht.
 - [X] Cookiecounter im Shop
 - [ ] Level-System Coden
 
-Heute habe ich damit begonnen den Cookiecounter im Shop zu machen. Dass er einigermassen funktionert war nicht so schwer, doch er updatet noch nicht bei jedem Cookie. Als nächstes habe ich damit begonnen den Autoclicker machen. Diesesmal hat es funktioniert und der Cookiecounter aktualissiert auf beiden Forms gleichzeitig. Anschliessen habe ich noch gemacht, dass der Preis nach jedem Kauf verdoppelt wird und die ausgegebenen Cookies abgezogen werden. Zum Ende wollte ich den Counter im Shop noch fertig stellen, dass wenn man den Cookie klickt er auch direkt geupdatet wird. Dies habe ich mit dem Befehl "ShopForm.UpdateShopCookieCount();" probiert doch jetzt kommt eine Fehlermeldung.
+Heute habe ich damit begonnen den Cookiecounter im Shop zu machen. Dass er einigermassen funktionert war nicht so schwer, doch er updatet noch nicht bei jedem Cookie. Als nächstes habe ich damit begonnen den Autoclicker machen. Diesesmal hat es funktioniert und der Cookiecounter aktualissiert auf beiden Forms gleichzeitig. Anschliessen habe ich noch gemacht, dass der Preis nach jedem Kauf verdoppelt wird und die ausgegebenen Cookies abgezogen werden. Zum Ende wollte ich den Counter im Shop noch fertig stellen, dass wenn man den Cookie klickt er auch direkt geupdatet wird. Dies habe ich mit dem Befehl "ShopForm.UpdateShopCookieCount();" probiert doch jetzt kommt eine Fehlermeldung. Fürs Coden des Level-Systemes hat es nicht gereicht.
 
 ## 7.3: Kern-Funktionalität
 Kernfunktion: Upgrades
@@ -64,7 +64,7 @@ Heute habe ich damit begonnen das Preissystem und die Levelmechanik auch für da
 - [ ] Shop kann sich im Hintegrund aktualisieren
 - [ ] Countdown für 60sec Timer
 
-Heute habe ich das 2. mal damit begonnen, das 2x Upgrade zu Coden. Heute ist es viel besser gelungen und es funktioniert. Als Nächstes habe ich die Preise und Preisupdates der einzelnen Upgrades angepasst. Sie sind noch nicht perfekt, aber besser als vorhin. Zum Schluss habe ich mich noch an den Countdown gemacht, der Anzeigen soll, wie lange das 2x Upgrade noch hält. Ich habe einen Code geschrieben, aber der funktioniert noch nicht und ich weiss nicht wieso.
+Heute habe ich das 2. mal damit begonnen, das 2x Upgrade zu Coden. Heute ist es viel besser gelungen und es funktioniert. Als Nächstes habe ich die Preise und Preisupdates der einzelnen Upgrades angepasst. Sie sind noch nicht perfekt, aber besser als vorhin. Zum Schluss habe ich mich noch an den Countdown gemacht, der Anzeigen soll, wie lange das 2x Upgrade noch hält. Ich habe einen Code geschrieben, aber der funktioniert noch nicht und ich weiss nicht wieso. Zum Shop bin ich noch nicht gekommen.
 
 ## 28.3: Auspolieren
 - [X] Countdown zum laufen bringen
